@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIODATA MAHASISWA</title>
+  </head>
+  <!-- NAMA : ADI NUGROHO
+  NIM  : C2C022027
+  KELAS : INFORMATIKA A -->
+  <body
+    style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #081839;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    ">
+    <section
+      style="
+        position: relative;
+        max-width: 400px;
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        backdrop-filter: blur(55px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 3rem;
+      ">
+      <form id="studentForm">
+        <h1 style="font-size: 2rem; text-align: center; color: #fff">
+          BIODATA MAHASISWA🧑‍🎓
+        </h1>
+        <!--nama mahasiswa-->
+        <div>
+          <label style="color: aliceblue" for="nama">Nama Lengkap:</label><br />
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            title="Nama harus berisi huruf dan spasi saja."
+            required
+            style="
+              width: 100%;
+              height: 30px;
+              background: transparent;
+              border: #fff solid 1px;
+              border-radius: 10px;
+              font-size: 1rem;
+              color: aliceblue;
+            " /><br /><br />
+        </div>
+        <!--nin dan prodi mahasiswa-->
+        <div style="display: flex; justify-content: space-between">
+          <div>
+            <label style="color: aliceblue" for="nim">NIM:</label><br />
+            <input
+              type="text"
+              id="nim"
+              name="nim"
+              maxlength="10"
+              style="
+                width: 100%;
+                height: 30px;
+                background: transparent;
+                border: #fff solid 1px;
+                border-radius: 10px;
+                font-size: 1rem;
+                color: aliceblue;
+              " />
+          </div>
+          <div>
+            <label style="color: aliceblue" for="prodi">Program Studi:</label
+            ><br />
+            <select
+              style="
+                width: 100%;
+                height: 40px;
+                background: transparent;
+                border: #dbd1d1 solid 1px;
+                border-radius: 10px;
+                font-size: 1rem;
+                color: aliceblue;
+              "
+              id="prodi"
+              name="prodi">
+              <option
+                style="background-color: #0e0c0c"
+                value="Teknik Informatika">
+                Teknik Informatika
+              </option>
+              <option style="background-color: #0e0c0c" value="Sistem Mesin">
+                Teknik Mesin
+              </option>
+              <option style="background-color: #0e0c0c" value="Teknik Elektro">
+                Teknik Elektro
+              </option>
+              <option style="background-color: #0e0c0c" value="Teknik Elektro">
+                Arsitektur
+              </option>
+            </select>
+          </div>
+        </div>
+        <!--tahun dan jenis kelamin mahasiswa-->
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+          ">
+          <div>
+            <label style="color: #fafafa" for="umur">Umur:</label>
+            <select id="umur" name="umur" required>
+              <option value="">Pilih Umur</option>
+              <option value="17">17 Tahun</option>
+              <option value="18">18 Tahun</option>
+              <option value="19">19 Tahun</option>
+              <option value="20">20 Tahun</option>
+              <option value="21">21 Tahun</option>
+              <option value="22">22 Tahun</option>
+              <option value="23">23 Tahun</option>
+              <option value="24">24 Tahun</option>
+            </select>
+            <br /><br />
+          </div>
+          <div style="display: flex; color: #fafafa; gap: 20px">
+            <label for="laki-laki"
+              ><input
+                type="radio"
+                id="laki-laki"
+                name="jenis_kelamin"
+                value="Laki-laki"
+                required />Laki-laki</label
+            >
+            <label for="perempuan"
+              ><input
+                type="radio"
+                id="perempuan"
+                name="jenis_kelamin"
+                value="perempuan"
+                required />Perempuan</label
+            >
+          </div>
+        </div>
+        <!--kelas mahasiswa-->
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fafafa;
+            padding-top: 10px;
+          ">
+          <label for="kelas"
+            ><input
+              style="width: 20px; height: 20px"
+              type="radio"
+              id="kelasa"
+              name="kelas"
+              value="kelasa"
+              required
+              type="radio" />Kelas A</label
+          >
+          <label for="kelas"
+            ><input
+              style="width: 20px; height: 20px"
+              type="radio"
+              id="kelasb"
+              name="kelas"
+              value="kelasb"
+              required
+              type="radio" />Kelas B</label
+          >
+          <label for="kelas"
+            ><input
+              style="width: 20px; height: 20px"
+              type="radio"
+              id="kelasc"
+              name="kelas"
+              value="kelasc"
+              required
+              type="radio" />Kelas C</label
+          >
+          <label for="kelas"
+            ><input
+              style="width: 20px; height: 20px"
+              type="radio"
+              id="kelasd"
+              name="kelas"
+              value="kelasd"
+              required
+              type="radio" />Kelas D</label
+          >
+        </div>
+        <br />
+        <!--buttom-->
+        <input
+          style="
+            width: 100%;
+            height: 40px;
+            background-color: #043779;
+            border-radius: 10px;
+            font-weight: 600;
+            color: #fafafa;
+          "
+          type="submit"
+          value="Kirim" />
+      </form>
+    </section>
+    <!--pop-up -->
+    <div
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+      "
+      id="errorModal">
+      <div
+        style="
+          background-color: transparent;
+          backdrop-filter: blur(55px);
+          border: 3px solid rgba(255, 0, 0, 0.986);
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          width: 400px;
+          color: #fafafa;
+        ">
+        <p id="errorMessage">Nama tidak sesuai format.</p>
+        <button
+          style="
+            width: 100px;
+            height: 30px;
+            color: #fafafa;
+            background-color: #ff0800;
+            border-radius: 20px;
+          "
+          onclick="closeModal(clearTimeout)">
+          Coba Lagi
+        </button>
+      </div>
+    </div>
+    <script>
+      document.getElementById("studentForm").onsubmit = function (event) {
+        event.preventDefault();
+        var nama = document.getElementById("nama").value;
+        var nim = document.getElementById("nim").value;
+        if (!/^[A-Za-z\s]+$/.test(nama)) {
+          document.getElementById("errorMessage").innerText =
+            "❗NAMA ANDA TIDAK BISA DIMASUKAN❗";
+          showModal();
+          return;
+        }
+        // if (!/^\d+$/.test(nim)) {
+        //   document.getElementById("errorMessage").innerText =
+        //     "❗NIM harus diisi dengan angka saja.❗";
+        //   showModal();
+        //   return;
+        // }
+        alert("Data berhasil dikirim!");
+        document.getElementById("studentForm").reset();
+      };
+      function showModal() {
+        document.getElementById("errorModal").style.display = "flex";
+      }
+      function closeModal() {
+        document.getElementById("errorModal").style.display = "none";
+        document.getElementById("studentForm").reset();
+      }
+    </script>
+  </body>
+</html>
