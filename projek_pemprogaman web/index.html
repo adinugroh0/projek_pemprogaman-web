@@ -14,7 +14,7 @@
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      background-color: #081839;
+      background-color: #ffffff;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -24,7 +24,7 @@
         position: relative;
         max-width: 400px;
         background-color: transparent;
-        border: 2px solid rgba(255, 255, 255, 0.5);
+        border: 2px solid rgba(119, 119, 119, 0.986);
         border-radius: 20px;
         backdrop-filter: blur(55px);
         display: flex;
@@ -33,12 +33,13 @@
         padding: 2rem 3rem;
       ">
       <form id="studentForm">
-        <h1 style="font-size: 2rem; text-align: center; color: #fff">
+        <h1 style="font-size: 2rem; text-align: center; color: #000000">
           BIODATA MAHASISWA🧑‍🎓
         </h1>
         <!--nama mahasiswa-->
         <div>
-          <label style="color: aliceblue" for="nama">Nama Lengkap:</label><br />
+          <label style="color: rgb(0, 0, 0)" for="nama">Nama Lengkap:</label
+          ><br />
           <input
             type="text"
             id="nama"
@@ -49,16 +50,16 @@
               width: 100%;
               height: 30px;
               background: transparent;
-              border: #fff solid 1px;
+              border: #777777 solid 1px;
               border-radius: 10px;
               font-size: 1rem;
-              color: aliceblue;
+              color: #000000;
             " /><br /><br />
         </div>
         <!--nin dan prodi mahasiswa-->
         <div style="display: flex; justify-content: space-between">
           <div>
-            <label style="color: aliceblue" for="nim">NIM:</label><br />
+            <label style="color: rgb(11, 12, 12)" for="nim">NIM:</label><br />
             <input
               type="text"
               id="nim"
@@ -68,14 +69,14 @@
                 width: 100%;
                 height: 30px;
                 background: transparent;
-                border: #fff solid 1px;
+                border: #747474 solid 1px;
                 border-radius: 10px;
                 font-size: 1rem;
-                color: aliceblue;
+                color: rgb(6, 7, 7);
               " />
           </div>
           <div>
-            <label style="color: aliceblue" for="prodi">Program Studi:</label
+            <label style="color: rgb(0, 0, 0)" for="prodi">Program Studi:</label
             ><br />
             <select
               style="
@@ -85,38 +86,38 @@
                 border: #dbd1d1 solid 1px;
                 border-radius: 10px;
                 font-size: 1rem;
-                color: aliceblue;
+                color: rgb(0, 0, 0);
               "
               id="prodi"
               name="prodi">
               <option
-                style="background-color: #0e0c0c"
+                style="background-color: #f1ecec"
                 value="Teknik Informatika">
                 Teknik Informatika
               </option>
-              <option style="background-color: #0e0c0c" value="Sistem Mesin">
+              <option style="background-color: #fffefe" value="Sistem Mesin">
                 Teknik Mesin
               </option>
-              <option style="background-color: #0e0c0c" value="Teknik Elektro">
+              <option style="background-color: #fffefe" value="Teknik Elektro">
                 Teknik Elektro
               </option>
-              <option style="background-color: #0e0c0c" value="Teknik Elektro">
+              <option style="background-color: #fffefe" value="Teknik Elektro">
                 Arsitektur
               </option>
             </select>
           </div>
         </div>
-        <!--tahun dan jenis kelamin mahasiswa-->
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 10px;
-          ">
+        <!--umur dan jenis kelamin mahasiswa-->
+        <div style="display: flex; align-items: center; padding-top: 10px">
           <div>
-            <label style="color: #fafafa" for="umur">Umur:</label>
-            <select id="umur" name="umur" required>
+            <label style="color: #030303; display: block" for="umur"
+              >Umur Dan Jenis Kelamin</label
+            >
+            <select
+              style="width: 300px; height: 30px"
+              id="umur"
+              name="umur"
+              required>
               <option value="">Pilih Umur</option>
               <option value="17">17 Tahun</option>
               <option value="18">18 Tahun</option>
@@ -125,12 +126,12 @@
               <option value="21">21 Tahun</option>
               <option value="22">22 Tahun</option>
               <option value="23">23 Tahun</option>
-              <option value="24">24 Tahun</option>
+              <option value="24">24 - 50 Tahun</option>
             </select>
             <br /><br />
           </div>
-          <div style="display: flex; color: #fafafa; gap: 20px">
-            <label for="laki-laki"
+          <div style="display: block; color: #000000; gap: 20px">
+            <label style="display: block" for="laki-laki"
               ><input
                 type="radio"
                 id="laki-laki"
@@ -148,13 +149,29 @@
             >
           </div>
         </div>
+        <div>
+          <label style="display: block; margin-bottom: 5px" for="dob"
+            >Tanggal Lahir:</label
+          >
+          <input
+            style="
+              width: 100%;
+              padding: 8px;
+              border-radius: 10px;
+              background-color: transparent;
+            "
+            type="date"
+            id="dob"
+            name="dob"
+            required />
+        </div>
         <!--kelas mahasiswa-->
         <div
           style="
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: #fafafa;
+            color: #0e0b0b;
             padding-top: 10px;
           ">
           <label for="kelas"
@@ -204,7 +221,13 @@
           style="
             width: 100%;
             height: 40px;
-            background-color: #043779;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(
+              347deg,
+              rgba(2, 0, 36, 1) 0%,
+              rgba(9, 86, 121, 1) 44%,
+              rgba(0, 212, 255, 1) 100%
+            );
             border-radius: 10px;
             font-weight: 600;
             color: #fafafa;
@@ -261,7 +284,7 @@
         var nim = document.getElementById("nim").value;
         if (!/^[A-Za-z\s]+$/.test(nama)) {
           document.getElementById("errorMessage").innerText =
-            "❗NAMA ANDA TIDAK BISA DIMASUKAN❗";
+            "❗NAMA TIDAK BOLEH DI ISI ANGGKA❗";
           showModal();
           return;
         }
